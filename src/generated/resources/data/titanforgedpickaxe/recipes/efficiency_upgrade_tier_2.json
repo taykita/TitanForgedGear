@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_2"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "DOD",
+    "OBO",
+    "DOD"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:efficiency_upgrade_level_2"
+  }
+}

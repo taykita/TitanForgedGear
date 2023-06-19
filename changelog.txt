@@ -1,0 +1,4 @@
+TF-3 Make it possible to upgrade pickaxe through using left and right hand
+TF-2 Creating efficiency upgrade
+TF-1 Creating first version of pickaxe
+TF-0 Started and preparing project

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "P": {
+      "tag": "minecraft:planks"
+    }
+  },
+  "pattern": [
+    "IPI",
+    "PIP",
+    "IPI"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:upgrade_base"
+  }
+}

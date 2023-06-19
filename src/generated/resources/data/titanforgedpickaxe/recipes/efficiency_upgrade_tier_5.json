@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_4"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_3"
+    }
+  },
+  "pattern": [
+    "TNT",
+    "NBN",
+    "TNT"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:efficiency_upgrade_level_5"
+  }
+}

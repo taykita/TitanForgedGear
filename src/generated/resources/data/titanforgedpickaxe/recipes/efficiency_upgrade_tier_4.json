@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_3"
+    },
+    "E": {
+      "item": "minecraft:emerald"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_2"
+    }
+  },
+  "pattern": [
+    "TET",
+    "EBE",
+    "TET"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:efficiency_upgrade_level_4"
+  }
+}

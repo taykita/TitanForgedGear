@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:upgrade_base"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "OIO",
+    "IBI",
+    "OIO"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:efficiency_upgrade_level_1"
+  }
+}

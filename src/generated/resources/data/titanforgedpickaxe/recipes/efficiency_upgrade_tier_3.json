@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_2"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_1"
+    }
+  },
+  "pattern": [
+    "TDT",
+    "DBD",
+    "TDT"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:efficiency_upgrade_level_3"
+  }
+}
