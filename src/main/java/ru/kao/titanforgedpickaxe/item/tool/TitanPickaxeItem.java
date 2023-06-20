@@ -7,7 +7,6 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.world.item.DiggerItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Tier;
-import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
@@ -21,9 +20,9 @@ import java.util.List;
 
 import static ru.kao.titanforgedpickaxe.item.upgrade.EfficiencyUpgradeItem.MULTIPLIER;
 import static ru.kao.titanforgedpickaxe.item.upgrade.util.UpgradeUtil.TIER_LIST;
-import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.EXP_TAG_NAME;
-import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.TIER_TAG_NAME;
+import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.*;
 import static ru.kao.titanforgedpickaxe.item.util.TooltipFillUtil.fillTooltipIntTextFromTag;
+import static ru.kao.titanforgedpickaxe.item.util.TooltipFillUtil.fillUpgradeInfo;
 
 public class TitanPickaxeItem extends DiggerItem implements IImproving {
 
@@ -44,12 +43,12 @@ public class TitanPickaxeItem extends DiggerItem implements IImproving {
         CompoundTag tag = itemStack.getTag();
         if (tag != null) {
             tag.putInt("HideFlags", 1);
-            fillTooltipIntTextFromTag(
-                    components, tag, "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp", EXP_TAG_NAME);
-            if (tag.getInt("efficiencyLevel") > 0) {
-                fillTooltipIntTextFromTag(
-                        components, tag, "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level", "efficiencyLevel");
-            }
+            fillTooltipIntTextFromTag(components, tag, "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp", EXP_TAG_NAME);
+
+            fillUpgradeInfo(components, tag, EFFICIENCY_TAG_NAME,
+                    "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level");
+            fillUpgradeInfo(components, tag, FORTUNE_TAG_NAME,
+                    "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.fortune.level");
         }
     }
 
@@ -59,7 +58,7 @@ public class TitanPickaxeItem extends DiggerItem implements IImproving {
         if (tag == null) {
             return blockState.is(this.blocks) ? this.speed : 1.0F;
         }
-        return blockState.is(this.blocks) ? this.speed + tag.getInt("efficiencyLevel")*MULTIPLIER : 1.0F;
+        return blockState.is(this.blocks) ? this.speed + tag.getInt(EFFICIENCY_TAG_NAME)*MULTIPLIER : 1.0F;
     }
 
     @Override

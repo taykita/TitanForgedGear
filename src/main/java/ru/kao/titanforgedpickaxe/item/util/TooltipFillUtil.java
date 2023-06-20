@@ -8,7 +8,15 @@ import net.minecraft.network.chat.contents.TranslatableContents;
 import java.util.List;
 
 public class TooltipFillUtil {
-    public static void fillTooltipNumberText(List<Component> components, CompoundTag tag, String tooltipLink, Number value) {
+
+    public static void fillUpgradeInfo(List<Component> components, CompoundTag tag, String tagName, String tooltipLink) {
+        if (tag.getInt(tagName) > 0) {
+            fillTooltipIntTextFromTag(
+                    components, tag, tooltipLink, tagName);
+        }
+    }
+
+    public static void fillTooltipNumberText(List<Component> components, String tooltipLink, Number value) {
         components.add(MutableComponent.
                 create(new TranslatableContents(
                         tooltipLink))

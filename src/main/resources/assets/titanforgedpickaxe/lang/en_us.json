@@ -14,5 +14,6 @@
   "item.titanforgedpickaxe.fortune_upgrade_level_5": "Fortune Upgrade Tier 5",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp": "Mining experience",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level": "Efficiency level",
+  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.fortune.level": "Fortune level",
   "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience"
 }

@@ -1,6 +1,5 @@
 package ru.kao.titanforgedpickaxe.item.upgrade;
 
-import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
@@ -34,9 +33,8 @@ public class LevelingUpgradeItem extends Item {
 
     @Override
     public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        CompoundTag tag = itemStack.getTag();
         fillTooltipNumberText(
-                components, tag, "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp", NEED_EXP*LEVEL);
+                components, "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp", NEED_EXP*LEVEL);
     }
 
     public static class LevelingUpgradeProperties extends AbstractItemProperties<LevelingUpgradeProperties> {
