@@ -1,4 +1,6 @@
+TF-5 Create tier upgrade
+TF-4 Create fortune upgrade
 TF-3 Make it possible to upgrade pickaxe through using left and right hand
-TF-2 Creating efficiency upgrade
-TF-1 Creating first version of pickaxe
-TF-0 Started and preparing project
+TF-2 Create efficiency upgrade
+TF-1 Create first version of pickaxe
+TF-0 Begin and prepare project

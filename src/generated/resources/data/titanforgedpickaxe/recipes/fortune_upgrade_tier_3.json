@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_2"
+    },
+    "D": {
+      "item": "minecraft:diamond_block"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_1"
+    }
+  },
+  "pattern": [
+    "DTD",
+    "TBT",
+    "DTD"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:fortune_upgrade_level_3"
+  }
+}

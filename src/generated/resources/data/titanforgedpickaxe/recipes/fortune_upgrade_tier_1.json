@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:upgrade_base"
+    },
+    "L": {
+      "item": "minecraft:lapis_block"
+    },
+    "O": {
+      "item": "minecraft:obsidian"
+    }
+  },
+  "pattern": [
+    "OLO",
+    "LBL",
+    "OLO"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:fortune_upgrade_level_1"
+  }
+}

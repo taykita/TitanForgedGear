@@ -1,0 +1,6 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "titanforgedpickaxe:item/fortune_upgrade_level_2"
+  }
+}

@@ -7,7 +7,12 @@
   "item.titanforgedpickaxe.efficiency_upgrade_level_3": "Efficiency Upgrade Tier 3",
   "item.titanforgedpickaxe.efficiency_upgrade_level_4": "Efficiency Upgrade Tier 4",
   "item.titanforgedpickaxe.efficiency_upgrade_level_5": "Efficiency Upgrade Tier 5",
+  "item.titanforgedpickaxe.fortune_upgrade_level_1": "Fortune Upgrade Tier 1",
+  "item.titanforgedpickaxe.fortune_upgrade_level_2": "Fortune Upgrade Tier 2",
+  "item.titanforgedpickaxe.fortune_upgrade_level_3": "Fortune Upgrade Tier 3",
+  "item.titanforgedpickaxe.fortune_upgrade_level_4": "Fortune Upgrade Tier 4",
+  "item.titanforgedpickaxe.fortune_upgrade_level_5": "Fortune Upgrade Tier 5",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp": "Mining experience",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level": "Efficiency level",
-  "tooltip.titanforgedpickaxe.efficiency_upgrade.tooltip.need.mine.exp": "Required amount of experience"
+  "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience"
 }

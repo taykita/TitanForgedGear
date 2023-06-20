@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_4"
+    },
+    "N": {
+      "item": "minecraft:netherite_ingot"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_3"
+    }
+  },
+  "pattern": [
+    "NTN",
+    "TBT",
+    "NTN"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:fortune_upgrade_level_5"
+  }
+}

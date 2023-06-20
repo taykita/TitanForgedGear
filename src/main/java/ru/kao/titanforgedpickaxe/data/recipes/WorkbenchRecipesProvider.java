@@ -33,6 +33,59 @@ public class WorkbenchRecipesProvider extends RecipeProvider implements IConditi
                 .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "upgrade_base"));
 
         efficiencyUpgradeShape(consumer);
+        fortuneUpgradeShape(consumer);
+    }
+
+    private void fortuneUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(ModItems.FORTUNE_UPGRADE_TIER_1.get())
+                .define('O', Items.OBSIDIAN)
+                .define('L', Items.LAPIS_BLOCK)
+                .define('B', ModItems.UPGRADE_BASE.get())
+                .pattern("OLO")
+                .pattern("LBL")
+                .pattern("OLO")
+                .unlockedBy("has_upgrade_base", has(ModItems.UPGRADE_BASE.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "fortune_upgrade_tier_1"));
+
+        ShapedRecipeBuilder.shaped(ModItems.FORTUNE_UPGRADE_TIER_2.get())
+                .define('L', Items.LAPIS_BLOCK)
+                .define('D', Items.DIAMOND)
+                .define('B', ModItems.FORTUNE_UPGRADE_TIER_1.get())
+                .pattern("LDL")
+                .pattern("DBD")
+                .pattern("LDL")
+                .unlockedBy("has_fortune_upgrade_tier_1", has(ModItems.FORTUNE_UPGRADE_TIER_1.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "fortune_upgrade_tier_2"));
+
+        ShapedRecipeBuilder.shaped(ModItems.FORTUNE_UPGRADE_TIER_3.get())
+                .define('T', ModItems.FORTUNE_UPGRADE_TIER_1.get())
+                .define('D', Items.DIAMOND_BLOCK)
+                .define('B', ModItems.FORTUNE_UPGRADE_TIER_2.get())
+                .pattern("DTD")
+                .pattern("TBT")
+                .pattern("DTD")
+                .unlockedBy("has_fortune_upgrade_tier_2", has(ModItems.FORTUNE_UPGRADE_TIER_2.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "fortune_upgrade_tier_3"));
+
+        ShapedRecipeBuilder.shaped(ModItems.FORTUNE_UPGRADE_TIER_4.get())
+                .define('T', ModItems.FORTUNE_UPGRADE_TIER_2.get())
+                .define('E', Items.EMERALD_BLOCK)
+                .define('B', ModItems.FORTUNE_UPGRADE_TIER_3.get())
+                .pattern("ETE")
+                .pattern("TBT")
+                .pattern("ETE")
+                .unlockedBy("has_fortune_upgrade_tier_3", has(ModItems.FORTUNE_UPGRADE_TIER_3.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "fortune_upgrade_tier_4"));
+
+        ShapedRecipeBuilder.shaped(ModItems.FORTUNE_UPGRADE_TIER_5.get())
+                .define('T', ModItems.FORTUNE_UPGRADE_TIER_3.get())
+                .define('N', Items.NETHERITE_INGOT)
+                .define('B', ModItems.FORTUNE_UPGRADE_TIER_4.get())
+                .pattern("NTN")
+                .pattern("TBT")
+                .pattern("NTN")
+                .unlockedBy("has_fortune_upgrade_tier_4", has(ModItems.FORTUNE_UPGRADE_TIER_4.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "fortune_upgrade_tier_5"));
     }
 
     private void efficiencyUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {
@@ -49,7 +102,7 @@ public class WorkbenchRecipesProvider extends RecipeProvider implements IConditi
         ShapedRecipeBuilder.shaped(ModItems.EFFICIENCY_UPGRADE_TIER_2.get())
                 .define('O', Items.OBSIDIAN)
                 .define('D', Items.DIAMOND)
-                .define('B', ModItems.EFFICIENCY_UPGRADE_TIER_2.get())
+                .define('B', ModItems.EFFICIENCY_UPGRADE_TIER_1.get())
                 .pattern("DOD")
                 .pattern("OBO")
                 .pattern("DOD")
@@ -78,7 +131,7 @@ public class WorkbenchRecipesProvider extends RecipeProvider implements IConditi
 
         ShapedRecipeBuilder.shaped(ModItems.EFFICIENCY_UPGRADE_TIER_5.get())
                 .define('T', ModItems.EFFICIENCY_UPGRADE_TIER_3.get())
-                .define('N', Items.NETHERITE_INGOT)
+                .define('N', Items.NETHERITE_SCRAP)
                 .define('B', ModItems.EFFICIENCY_UPGRADE_TIER_4.get())
                 .pattern("TNT")
                 .pattern("NBN")
@@ -86,6 +139,8 @@ public class WorkbenchRecipesProvider extends RecipeProvider implements IConditi
                 .unlockedBy("has_efficiency_upgrade_tier_4", has(ModItems.EFFICIENCY_UPGRADE_TIER_4.get()))
                 .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "efficiency_upgrade_tier_5"));
     }
+
+
 
     @NotNull
     @Override

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_3"
+    },
+    "E": {
+      "item": "minecraft:emerald_block"
+    },
+    "T": {
+      "item": "titanforgedpickaxe:fortune_upgrade_level_2"
+    }
+  },
+  "pattern": [
+    "ETE",
+    "TBT",
+    "ETE"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:fortune_upgrade_level_4"
+  }
+}

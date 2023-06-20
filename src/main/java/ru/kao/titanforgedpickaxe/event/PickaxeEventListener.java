@@ -3,15 +3,13 @@ package ru.kao.titanforgedpickaxe.event;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.world.item.ItemStack;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.entity.player.PlayerXpEvent;
 import net.minecraftforge.event.level.BlockEvent;
-import net.minecraftforge.eventbus.api.Event;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import ru.kao.titanforgedpickaxe.TitanForgedPickaxe;
-import ru.kao.titanforgedpickaxe.item.tool.TitanPickaxeItem;
 
 import static ru.kao.titanforgedpickaxe.init.ModItems.TF_PICKAXE;
+import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.EXP_TAG_NAME;
 
 @Mod.EventBusSubscriber(modid = TitanForgedPickaxe.MODID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT)
 public class PickaxeEventListener {
@@ -23,11 +21,10 @@ public class PickaxeEventListener {
             CompoundTag tag = mainHandItem.getTag();
             if (tag == null) {
                 tag = new CompoundTag();
-                tag.putInt("mineExp", 1);
+                tag.putInt(EXP_TAG_NAME, 1);
                 mainHandItem.setTag(tag);
             }
-            tag.putInt("mineExp", tag.getInt("mineExp") + 100);
-            System.out.println(tag.getInt("mineExp"));
+            tag.putInt(EXP_TAG_NAME, tag.getInt(EXP_TAG_NAME) + 100000);
         }
     }
 }

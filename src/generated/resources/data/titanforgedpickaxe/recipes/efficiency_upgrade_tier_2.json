@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shaped",
   "key": {
     "B": {
-      "item": "titanforgedpickaxe:efficiency_upgrade_level_2"
+      "item": "titanforgedpickaxe:efficiency_upgrade_level_1"
     },
     "D": {
       "item": "minecraft:diamond"
