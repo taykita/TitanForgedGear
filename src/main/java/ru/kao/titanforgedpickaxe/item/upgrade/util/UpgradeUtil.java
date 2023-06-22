@@ -12,6 +12,7 @@ import net.minecraft.world.item.Tiers;
 import net.minecraftforge.registries.RegistryObject;
 import org.jetbrains.annotations.NotNull;
 import org.slf4j.Logger;
+import ru.kao.titanforgedpickaxe.item.util.TagUtil;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -59,11 +60,7 @@ public final class UpgradeUtil {
             return InteractionResultHolder.fail(itemInOffHand);
         }
 
-        CompoundTag nbt = itemInMainHand.getTag();
-        if (nbt == null) {
-            LOGGER.debug("Not enough mining experience");
-            return InteractionResultHolder.fail(itemInOffHand);
-        }
+        CompoundTag nbt = TagUtil.getNBT(itemInMainHand);
 
         int mineExp = nbt.getInt(EXP_TAG_NAME);
 

@@ -71,7 +71,13 @@ public final class ModItems {
             "fortune_upgrade_level_5",
             () -> new FortuneUpgradeItem(new LevelingUpgradeItem.LevelingUpgradeProperties().tab(MainItemGroup.MAIN_ITEM_GROUP).level(5)));
 
+    public static final RegistryObject<Item> DIAMOND_TIER_UPGRADE = UPGRADE_ITEMS.register(
+            "diamond_tier_upgrade",
+            () -> new TierUpgradeItem(new LevelingUpgradeItem.LevelingUpgradeProperties().tab(MainItemGroup.MAIN_ITEM_GROUP).level(3)));
 
+    public static final RegistryObject<Item> NETHERITE_TIER_UPGRADE = UPGRADE_ITEMS.register(
+            "netherite_tier_upgrade",
+            () -> new TierUpgradeItem(new LevelingUpgradeItem.LevelingUpgradeProperties().tab(MainItemGroup.MAIN_ITEM_GROUP).level(4)));
 
 //    public static final RegistryObject<Item> ENCHANTED_EFFICIENCY_UPGRADE_TIER_1 = UPGRADE_ITEMS.register(
 //            "efficiency_upgrade_level_1",

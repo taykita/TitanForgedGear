@@ -1,3 +1,4 @@
+TF-6 Create auto smelt upgrade
 TF-5 Create tier upgrade
 TF-4 Create fortune upgrade
 TF-3 Make it possible to upgrade pickaxe through using left and right hand

@@ -12,8 +12,13 @@
   "item.titanforgedpickaxe.fortune_upgrade_level_3": "Fortune Upgrade Tier 3",
   "item.titanforgedpickaxe.fortune_upgrade_level_4": "Fortune Upgrade Tier 4",
   "item.titanforgedpickaxe.fortune_upgrade_level_5": "Fortune Upgrade Tier 5",
+  "item.titanforgedpickaxe.auto_smelt_upgrade": "Auto Smelt Upgrade",
+  "item.titanforgedpickaxe.diamond_tier_upgrade": "Diamond Tier Upgrade",
+  "item.titanforgedpickaxe.netherite_tier_upgrade": "Netherite Tier Upgrade",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp": "Mining experience",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level": "Efficiency level",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.fortune.level": "Fortune level",
-  "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience"
+  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.tier": "Tier",
+  "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience",
+  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.auto_smelt": "Auto-smelt"
 }

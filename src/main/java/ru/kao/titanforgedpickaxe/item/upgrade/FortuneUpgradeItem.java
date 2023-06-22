@@ -21,7 +21,7 @@ public class FortuneUpgradeItem extends LevelingUpgradeItem {
     @Override
     public InteractionResultHolder<ItemStack> use(Level level, Player player, InteractionHand interactionHand) {
         return UpgradeUtil.tryToUpgrade(player,
-                interactionHand, LEVEL*NEED_EXP,
+                interactionHand, getNecessaryExp(),
                 FORTUNE_TAG_NAME, LEVEL,
                 (ItemStack itemStack) -> {
                     itemStack.isEnchanted();

@@ -13,9 +13,9 @@ import java.util.List;
 
 import static ru.kao.titanforgedpickaxe.item.util.TooltipFillUtil.fillTooltipNumberText;
 
-public class LevelingUpgradeItem extends Item {
+public class LevelingUpgradeItem extends UpgradeItem {
     public LevelingUpgradeItem(Properties properties) {
-        super(fillProperties(properties));
+        super(properties);
 
         if (properties instanceof LevelingUpgradeProperties) {
             LEVEL = ((LevelingUpgradeProperties) properties).level;
@@ -24,17 +24,10 @@ public class LevelingUpgradeItem extends Item {
         }
     }
     protected final int LEVEL;
-    protected int NEED_EXP;
-
-    @NotNull
-    private static Properties fillProperties(Properties properties) {
-        return properties.stacksTo(1);
-    }
 
     @Override
-    public void appendHoverText(ItemStack itemStack, @Nullable Level level, List<Component> components, TooltipFlag tooltipFlag) {
-        fillTooltipNumberText(
-                components, "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp", NEED_EXP*LEVEL);
+    protected int getNecessaryExp() {
+        return NEED_EXP * LEVEL;
     }
 
     public static class LevelingUpgradeProperties extends AbstractItemProperties<LevelingUpgradeProperties> {

@@ -7,6 +7,7 @@ import net.minecraftforge.event.level.BlockEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import ru.kao.titanforgedpickaxe.TitanForgedPickaxe;
+import ru.kao.titanforgedpickaxe.item.util.TagUtil;
 
 import static ru.kao.titanforgedpickaxe.init.ModItems.TF_PICKAXE;
 import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.EXP_TAG_NAME;
@@ -18,12 +19,7 @@ public class PickaxeEventListener {
     public static void breakEvent(BlockEvent.BreakEvent event) {
         ItemStack mainHandItem = event.getPlayer().getMainHandItem();
         if (mainHandItem.is(TF_PICKAXE.get())) {
-            CompoundTag tag = mainHandItem.getTag();
-            if (tag == null) {
-                tag = new CompoundTag();
-                tag.putInt(EXP_TAG_NAME, 1);
-                mainHandItem.setTag(tag);
-            }
+            CompoundTag tag = TagUtil.getNBT(mainHandItem);
             tag.putInt(EXP_TAG_NAME, tag.getInt(EXP_TAG_NAME) + 100000);
         }
     }
