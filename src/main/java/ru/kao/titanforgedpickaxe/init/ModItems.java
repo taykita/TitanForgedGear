@@ -13,9 +13,11 @@ import net.minecraftforge.registries.RegistryObject;
 import ru.kao.titanforgedpickaxe.TitanForgedPickaxe;
 import ru.kao.titanforgedpickaxe.group.MainItemGroup;
 import ru.kao.titanforgedpickaxe.item.tool.TitanPickaxeItem;
+import ru.kao.titanforgedpickaxe.item.upgrade.AutoSmeltUpgrade;
 import ru.kao.titanforgedpickaxe.item.upgrade.EfficiencyUpgradeItem;
 import ru.kao.titanforgedpickaxe.item.upgrade.FortuneUpgradeItem;
 import ru.kao.titanforgedpickaxe.item.upgrade.LevelingUpgradeItem;
+import ru.kao.titanforgedpickaxe.item.upgrade.TierUpgradeItem;
 import ru.kao.titanforgedpickaxe.item.upgrade.UpgradeBaseItem;
 
 public final class ModItems {
@@ -86,5 +88,8 @@ public final class ModItems {
 //    public static final RegistryObject<Item> ENCHANTED_EFFICIENCY_UPGRADE_TIER_2 = UPGRADE_ITEMS.register(
 //            "efficiency_upgrade_level_2",
 //            () -> new EfficiencyUpgradeItem(new LevelingUpgradeItem.LevelingUpgradeProperties().tab(MainItemGroup.MAIN_ITEM_GROUP).level(2)));
+public static final RegistryObject<Item> AUTO_SMELT_UPGRADE = UPGRADE_ITEMS.register(
+        "auto_smelt_upgrade",
+        () -> new AutoSmeltUpgrade(new Item.Properties().tab(MainItemGroup.MAIN_ITEM_GROUP)));
 
 }

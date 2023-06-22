@@ -5,6 +5,7 @@ import net.minecraftforge.data.event.GatherDataEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import ru.kao.titanforgedpickaxe.TitanForgedPickaxe;
+import ru.kao.titanforgedpickaxe.data.recipes.LootModifierGenerator;
 import ru.kao.titanforgedpickaxe.data.recipes.SmithingRecipesProvider;
 import ru.kao.titanforgedpickaxe.data.recipes.WorkbenchRecipesProvider;
 
@@ -18,6 +19,7 @@ public class DataGeneration {
 
         generator.addProvider(event.includeServer(), new SmithingRecipesProvider(generator));
         generator.addProvider(event.includeServer(), new WorkbenchRecipesProvider(generator));
+        generator.addProvider(event.includeServer(), new LootModifierGenerator(generator));
 
         generator.run();
     }

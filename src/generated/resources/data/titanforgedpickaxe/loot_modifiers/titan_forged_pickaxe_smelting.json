@@ -1,0 +1,13 @@
+{
+  "type": "titanforgedpickaxe:titan_forged_pickaxe_smelting",
+  "conditions": [
+    {
+      "condition": "minecraft:match_tool",
+      "predicate": {
+        "items": [
+          "titanforgedpickaxe:titan_forged_pickaxe"
+        ]
+      }
+    }
+  ]
+}

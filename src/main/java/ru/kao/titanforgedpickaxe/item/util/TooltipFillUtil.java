@@ -1,5 +1,6 @@
 package ru.kao.titanforgedpickaxe.item.util;
 
+import net.minecraft.ChatFormatting;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.chat.MutableComponent;
@@ -46,8 +47,8 @@ public class TooltipFillUtil {
                 .append(String.valueOf(list.get(tag.getInt(tagKey)))));
     }
 
-    public static void fillTooltipText(List<Component> components, String tooltipLink) {
+    public static void fillTooltipTextWithStyle(List<Component> components, String tooltipLink, ChatFormatting... styles) {
         components.add(MutableComponent.
-                create(new TranslatableContents(tooltipLink)));
+                create(new TranslatableContents(tooltipLink)).withStyle(styles));
     }
 }

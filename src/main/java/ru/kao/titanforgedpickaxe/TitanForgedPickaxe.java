@@ -22,7 +22,9 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import org.slf4j.Logger;
+import ru.kao.titanforgedpickaxe.networking.ModMessages;
 
+import static ru.kao.titanforgedpickaxe.init.LootModifiers.LOOT_MODIFIERS;
 import static ru.kao.titanforgedpickaxe.init.ModItems.CORE_ITEMS;
 import static ru.kao.titanforgedpickaxe.init.ModItems.UPGRADE_ITEMS;
 
@@ -58,6 +60,7 @@ public class TitanForgedPickaxe
         ITEMS.register(modEventBus);
         CORE_ITEMS.register(modEventBus);
         UPGRADE_ITEMS.register(modEventBus);
+        LOOT_MODIFIERS.register(modEventBus);
 
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
@@ -99,9 +102,7 @@ public class TitanForgedPickaxe
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        // Some common setup code
-        LOGGER.info("HELLO FROM COMMON SETUP");
-        LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
+        ModMessages.register();
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call

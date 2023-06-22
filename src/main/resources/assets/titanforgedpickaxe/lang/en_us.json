@@ -20,5 +20,7 @@
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.fortune.level": "Fortune level",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.tier": "Tier",
   "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience",
-  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.auto_smelt": "Auto-smelt"
+  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.auto_smelt": "Auto-smelt",
+  "key.category.titan_forged_pickaxe.general": "Titan Forged Pickaxe",
+  "key.titan_forged_pickaxe.switch.auto_smelt": "Enable/disable auto-smelt"
 }
