@@ -13,14 +13,17 @@
   "item.titanforgedpickaxe.fortune_upgrade_level_4": "Fortune Upgrade Tier 4",
   "item.titanforgedpickaxe.fortune_upgrade_level_5": "Fortune Upgrade Tier 5",
   "item.titanforgedpickaxe.auto_smelt_upgrade": "Auto Smelt Upgrade",
+  "item.titanforgedpickaxe.aoe_upgrade_level_1": "AOE Upgrade Tier 1",
+  "item.titanforgedpickaxe.aoe_upgrade_level_2": "AOE Upgrade Tier 2",
   "item.titanforgedpickaxe.diamond_tier_upgrade": "Diamond Tier Upgrade",
   "item.titanforgedpickaxe.netherite_tier_upgrade": "Netherite Tier Upgrade",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.mine.exp": "Mining experience",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.efficiency.level": "Efficiency level",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.fortune.level": "Fortune level",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.tier": "Tier",
-  "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience",
   "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.auto_smelt": "Auto-smelt",
+  "tooltip.titanforgedpickaxe.titan_forged_pickaxe.tooltip.aoe.level": "AOE level",
+  "tooltip.titanforgedpickaxe.upgrade.tooltip.need.mine.exp": "Required amount of experience",
   "key.category.titan_forged_pickaxe.general": "Titan Forged Pickaxe",
   "key.titan_forged_pickaxe.switch.auto_smelt": "Enable/disable auto-smelt"
 }

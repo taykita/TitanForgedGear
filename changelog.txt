@@ -1,4 +1,5 @@
-TF-7 Create NxN mining upgrade
+TF-8 Create Ore Finder mining upgrade
+TF-7 Create AOE NxN mining upgrade
 TF-6 Create auto smelt upgrade
 TF-5 Create tier upgrade
 TF-4 Create fortune upgrade

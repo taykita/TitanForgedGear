@@ -34,6 +34,66 @@ public class WorkbenchRecipesProvider extends RecipeProvider implements IConditi
 
         efficiencyUpgradeShape(consumer);
         fortuneUpgradeShape(consumer);
+        tierUpgradeShape(consumer);
+        autoSmeltUpgradeShape(consumer);
+        aoeUpgradeShape(consumer);
+    }
+
+    private void aoeUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(ModItems.AOE_UPGRADE_LEVEL_1.get())
+                .define('N', Items.NETHERITE_SCRAP)
+                .define('D', Items.DIAMOND)
+                .define('B', ModItems.UPGRADE_BASE.get())
+                .pattern("DND")
+                .pattern("NBN")
+                .pattern("DND")
+                .unlockedBy("has_upgrade_base", has(ModItems.UPGRADE_BASE.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "aoe_upgrade_level_1"));
+
+        ShapedRecipeBuilder.shaped(ModItems.AOE_UPGRADE_LEVEL_2.get())
+                .define('N', Items.NETHERITE_INGOT)
+                .define('D', Items.DIAMOND_BLOCK)
+                .define('B', ModItems.AOE_UPGRADE_LEVEL_1.get())
+                .pattern("DND")
+                .pattern("NBN")
+                .pattern("DND")
+                .unlockedBy("has_aoe_upgrade_level_1", has(ModItems.AOE_UPGRADE_LEVEL_1.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "aoe_upgrade_level_2"));
+    }
+
+    private void autoSmeltUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(ModItems.AUTO_SMELT_UPGRADE.get())
+                .define('N', Items.NETHERITE_INGOT)
+                .define('D', Items.DIAMOND)
+                .define('M', Items.MAGMA_BLOCK)
+                .define('B', ModItems.UPGRADE_BASE.get())
+                .pattern("DND")
+                .pattern("MBM")
+                .pattern("DMD")
+                .unlockedBy("has_upgrade_base", has(ModItems.UPGRADE_BASE.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "auto_smelt_upgrade"));
+    }
+
+    private void tierUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {
+        ShapedRecipeBuilder.shaped(ModItems.DIAMOND_TIER_UPGRADE.get())
+                .define('I', Items.IRON_INGOT)
+                .define('D', Items.DIAMOND)
+                .define('B', ModItems.UPGRADE_BASE.get())
+                .pattern("DID")
+                .pattern("IBI")
+                .pattern("DID")
+                .unlockedBy("has_upgrade_base", has(ModItems.UPGRADE_BASE.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "diamond_tier_upgrade"));
+
+        ShapedRecipeBuilder.shaped(ModItems.NETHERITE_TIER_UPGRADE.get())
+                .define('D', Items.DIAMOND)
+                .define('N', Items.NETHERITE_SCRAP)
+                .define('B', ModItems.DIAMOND_TIER_UPGRADE.get())
+                .pattern("NDN")
+                .pattern("DBD")
+                .pattern("NDN")
+                .unlockedBy("had_diamond_upgrade", has(ModItems.DIAMOND_TIER_UPGRADE.get()))
+                .save(consumer, new ResourceLocation(TitanForgedPickaxe.MODID, "netherite_tier_upgrade"));
     }
 
     private void fortuneUpgradeShape(@NotNull Consumer<FinishedRecipe> consumer) {

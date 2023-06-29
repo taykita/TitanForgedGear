@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:diamond_tier_upgrade"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "N": {
+      "item": "minecraft:netherite_scrap"
+    }
+  },
+  "pattern": [
+    "NDN",
+    "DBD",
+    "NDN"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:netherite_tier_upgrade"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "B": {
+      "item": "titanforgedpickaxe:upgrade_base"
+    },
+    "D": {
+      "item": "minecraft:diamond"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "DID",
+    "IBI",
+    "DID"
+  ],
+  "result": {
+    "item": "titanforgedpickaxe:diamond_tier_upgrade"
+  }
+}

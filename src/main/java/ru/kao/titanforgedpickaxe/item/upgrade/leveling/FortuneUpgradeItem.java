@@ -1,4 +1,4 @@
-package ru.kao.titanforgedpickaxe.item.upgrade;
+package ru.kao.titanforgedpickaxe.item.upgrade.leveling;
 
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.ListTag;
@@ -6,6 +6,7 @@ import net.minecraft.nbt.Tag;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResultHolder;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.Level;
@@ -14,7 +15,7 @@ import ru.kao.titanforgedpickaxe.item.upgrade.util.UpgradeUtil;
 import static ru.kao.titanforgedpickaxe.item.util.PickaxeTagConstant.FORTUNE_TAG_NAME;
 
 public class FortuneUpgradeItem extends LevelingUpgradeItem {
-    public FortuneUpgradeItem(Properties properties) {
+    public FortuneUpgradeItem(Item.Properties properties) {
         super(properties);
         NEED_EXP = 2000;
     }
